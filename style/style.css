@@ -1,0 +1,133 @@
+.btn {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    background-color: #f0650d;
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: 800;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    position: relative;
+    outline: 0;
+    -webkit-transition: background-color .1s ease;
+    -o-transition: background-color .1s ease;
+    transition: background-color .1s ease;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn::after {
+    -webkit-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+    transition: background-color .2s ease;
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    opacity: .18;
+    -webkit-border-bottom-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    left: 0;
+}
+
+.btn:focus,
+.btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #f37423;
+}
+
+.btn:hover::after {
+    opacity: .22;
+}
+
+.btn:active {
+    background-color: #d85b0c;
+}
+
+.btn:active::after {
+    opacity: .32;
+}
+
+.btn.btn_gray {
+    background-color: #4b5a65;
+}
+
+.btn.btn_gray::after {
+    background-color: #2a3339;
+}
+
+.btn.btn_gray:hover {
+    background-color: #566774;
+}
+
+.btn.btn_gray:hover::after {
+    opacity: .22;
+}
+
+.btn.btn_gray:active {
+    background-color: #404d56;
+}
+
+.btn.btn_gray:active::after {
+    opacity: .32;
+}
+
+.grid {
+    display: grid;
+
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.75;
+    font-family: raleway-grid, sans-serif;
+    overflow-x: hidden;
+    opacity: 1;
+    color: #333
+}
+
+.main-header {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #293A43;
+    opacity: .92;
+}
+
+.header-content {
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    font-family: 'Regular';
+    line-height: 0.5;
+}
