@@ -81,7 +81,7 @@
 
 @media (max-width: 480px) {
     .portfolio-section {
-        grid-template-columns: 1fr
+        grid-template-columns: minmax(100%, 1fr);
     }
 
     .portfolio-item {
