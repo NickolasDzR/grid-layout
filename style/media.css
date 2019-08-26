@@ -80,39 +80,26 @@
 }
 
 @media (max-width: 480px) {
-    .portfolio-item {
-        min-height: 50vh;
-        font-size: 14px;
+    .portfolio-section {
+        grid-template-columns: 1fr
     }
 
-    .portfolio-section {
-        grid-template-columns: 1fr;
+    .portfolio-item {
+        min-height: 50vh
     }
 
     .portfolio-item:nth-child(1) {
-        grid-column: initial;
-    }
-
-    .portfolio-item:nth-child(2) {
-        grid-column: initial;
-    }
-
-    .portfolio-item:nth-child(3) {
-        grid-column: initial;
+        grid-column: initial
     }
 
     .portfolio-item:nth-child(4) {
-        grid-column: initial;
+        grid-column: initial
     }
 
     .portfolio-item:nth-child(5) {
-        grid-column: initial;
+        grid-column: initial
     }
 
-    .portfolio-item:nth-child(6) {
-        grid-column: initial;
-    }
-    
 
     .form-section form {
         grid-template-columns: 1fr;
