@@ -1,14 +1,124 @@
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
+@media (max-width: 1200px) {
+    .blog-home {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
+    .blog-home a:nth-child(3) {
+        grid-column: initial;
+    }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+    .blog-home a:nth-child(4) {
+        grid-column: initial;
+    }
+}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (max-width: 768px) {
+    .btn {
+        font-size: 18px;
+    }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+    .header-content {
+        padding: 40px 20px;
+    }
+
+    .header-content h1 {
+        font-size: 50px;
+    }
+
+    .portfolio-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-item {
+        min-height: 40vh;
+        font-size: 16px;
+    }
+
+    .portfolio-item:nth-child(4) {
+        grid-column: 2 / 4;
+    }
+
+    .portfolio-item:nth-child(5) {
+        grid-column: 1 / 3;
+        grid-row: initial;
+    }
+
+    .portfolio-item:nth-child(6) {
+        grid-column-start: initial;
+        grid-row: initial;
+    }
+
+    .section-ready .container {
+        grid-template-columns: 1fr;
+    }
+
+    .ready-left {
+        border-right: none;
+    }
+
+    .section-ready .container>div {
+        padding: 0 8%;
+    }
+
+    .landing-section {
+        padding: 40px 0;
+    }
+
+    .landing-section h2 {
+        font-size: 24px;
+
+    }
+
+    .form-section form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-home {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .portfolio-item {
+        min-height: 50vh;
+        font-size: 14px;
+    }
+
+    .portfolio-section {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item:nth-child(1) {
+        grid-column: initial;
+    }
+
+    .portfolio-item:nth-child(2) {
+        grid-column: initial;
+    }
+
+    .portfolio-item:nth-child(3) {
+        grid-column: initial;
+    }
+
+    .portfolio-item:nth-child(4) {
+        grid-column: initial;
+    }
+
+    .portfolio-item:nth-child(5) {
+        grid-column: initial;
+    }
+
+    .portfolio-item:nth-child(6) {
+        grid-column: initial;
+    }
+    
+
+    .form-section form {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-home {
+        grid-template-columns: 1fr;
+    }
+}
